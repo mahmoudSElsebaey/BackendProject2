@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <title>Website Games</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<body>
+  <div>{{>header}}</div>
+  <p class="home-info">{{info}}</p>
+
+  <div class="game-parent">
+    <div class="game-child">
+      <span>{{game1.rate}}</span>
+      <div class="game-img">
+        <img src={{game1.img}} alt={{game1.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game1.name}}</h3>
+      <p>{{game1.desc}}</p>
+    </div>
+    <div class="game-child">
+      <span>{{game2.rate}}</span>
+      <div class="game-img">
+        <img src={{game2.img}} alt={{game2.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game2.name}}</h3>
+      <p>{{game2.desc}}</p>
+    </div>
+    <div class="game-child">
+      <span>{{game3.rate}}</span>
+      <div class="game-img">
+        <img src={{game3.img}} alt={{game3.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game3.name}}</h3>
+      <p>{{game3.desc}}</p>
+    </div>
+    <div class="game-child">
+      <span>{{game4.rate}}</span>
+      <div class="game-img">
+        <img src={{game4.img}} alt={{game4.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game4.name}}</h3>
+      <p>{{game4.desc}}</p>
+    </div>
+    <div class="game-child">
+      <span>{{game5.rate}}</span>
+      <div class="game-img">
+        <img src={{game5.img}} alt={{game5.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game5.name}}</h3>
+      <p>{{game5.desc}}</p>
+    </div>
+    <div class="game-child">
+      <span>{{game6.rate}}</span>
+      <div class="game-img">
+        <img src={{game6.img}} alt={{game6.name}}>
+        <button>download Now</button>
+      </div>
+      <h3 class="game-name">{{game6.name}}</h3>
+      <p>{{game6.desc}}</p>
+    </div>
+  </div>
+
+  <div>{{>footer}}</div>
+</body>
+
+</html>

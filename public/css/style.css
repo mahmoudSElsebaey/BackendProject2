@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* ---------------------------------- header----------------------- */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .container {
+  width: 80%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+.logo {
+  font-size: 3vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 55px;
+  color: gold;
+  margin-left: 15px;
+  /* border: 1px solid green; */
+}
+nav ul {
+  list-style: none;
+  width: fit-content;
+  line-height: 55px;
+  /* border: 1px solid red; */
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+nav a {
+  color: #b6014d;
+  text-decoration: none;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  position: relative;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b6014d;
+  transform: scaleX(0);
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+nav a:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+  opacity: 1;
+}
+.page-title {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+  text-transform: capitalize;
+  /* border: 1px solid red; */
+}
+/* ----------------------------------------------- Home page ------------ */
+.home-info {
+  color: #d4cfcf;
+  text-align: center;
+  /* background-color: #4d0c0c4b; */
+  margin: auto;
+  width: fit-content;
+  padding: 5px;
+  text-shadow: 0px 0px 10px #000000;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.home-btns {
+  text-align: center;
+  /* border: 1px solid green; */
+}
+.home .btn1,
+.home .btn2 {
+  margin: 70px 3px 250px;
+  width: 220px;
+  height: 45px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: gold;
+  font-weight: 600;
+}
+.home .btn1 a,
+.home .btn2 a {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+}
+.home .btn2 {
+  background-color: #b6014d;
+}
+.home .btn2 a {
+  color: #ffffff;
+}
+.home button a:hover {
+  text-shadow: 0px 0px 20px #000000;
+}
+/*---------------------------------------------- Games page --------------*/
+.game-parent {
+  width: 80%;
+  margin: 20px auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+.game-child {
+  width: 32%;
+  position: relative;
+  background-color: black;
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 15px;
+  border: 1px solid #b6014d;
+  transition: all 0.3s linear;
+}
+.game-child .game-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  /* border: 1px solid green; */
+}
+.game-child .game-img img {
+  width: 100%;
+}
+.game-child span {
+  position: absolute;
+  background-color: #b6014d;
+  padding: 15px;
+  border-radius: 50%;
+  right: 10%;
+  z-index: 5;
+  transition: all 0.3s linear;
+  transform: translateY(-50%);
+}
+.game-child .game-img button {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  border: none;
+  transition: all 0.3s linear;
+  background-color: gold;
+  color: #fff;
+  text-shadow: 1px 1px 10px black;
+}
+.game-child:hover .game-img button {
+  bottom: 0;
+}
+.game-child:hover span {
+  background-color: goldenrod;
+  text-shadow: 1px 1px 5px black;
+}
+.game-child:hover {
+  border: 1px solid gold;
+}
+.game-child .game-name {
+  text-align: center;
+  color: #b6014d;
+  padding: 10px;
+}
+.game-child p {
+  text-align: center;
+  color: #ffffff94;
+  text-transform: capitalize;
+  padding: 10px 13px 30px;
+  font-size: 14px;
+}
+/*---------------------------------------------- About page --------------*/
+.about {
+  width: 80%;
+  height: auto;
+  margin: 50px auto 200px;
+  /* border: 1px solid rgb(90, 10, 239); */
+}
+.about div {
+  display: flex;
+  position: relative;
+}
+.about div:nth-child(2) {
+  top: 100px;
+  /* border: 1px solid green; */
+}
+.about div img {
+  width: 50%;
+  border-radius: 15px;
+}
+.about div img:nth-child(2) {
+  margin-left: auto;
+}
+.about div p {
+  width: 50%;
+  /* height: 60%; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  line-height: 2;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+}
+.about .aboutDesc1 {
+  right: 5%;
+}
+.about .aboutDesc2 {
+  left: 5%;
+  word-spacing: 3px;
+  padding-right: 0;
+  /* height: 50%; */
+}
+/*---------------------------------------------- Team page --------------*/
+.team-parent {
+  width: 80%;
+  margin: 50px auto 130px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.team-parent .team-child {
+  width: 24%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  /* border: 1px solid rgb(0, 218, 33); */
+}
+.team-parent .team-child img {
+  width: 100%;
+  height: 50%;
+}
+.team-parent .team-child:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.team-parent .team-child .team-info {
+  text-align: left;
+  padding: 5px;
+  /* border: 1px solid rgb(0, 218, 33); */
+}
+.team-parent .team-child .team-info ul li {
+  padding: 0px 10px;
+  color: gold;
+  line-height: 2;
+  text-transform: capitalize;
+  /* border: 1px solid red; */
+}
+.team-parent .team-child .team-info ul li:nth-child(1) {
+  color: #b6014d;
+  text-align: center;
+
+  padding: 0;
+}
+/* -------------------------------------------- Contact Page ------------ */
+.contact {
+  width: 80%;
+  margin: 70px auto;
+}
+.contact table {
+  width: 60%;
+  margin: auto;
+  line-height: 2;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
+  /* border: 1px solid red; */
+}
+.contact table tr td {
+  padding: 5px 30px;
+  /* border: 1px solid red; */
+}
+.contact table tr td:nth-child(1) {
+  width: 30%;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact table tr td:nth-child(2) {
+  color: #b6014d;
+}
+/* ------------------------------------------- footer ------------------- */
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+footer .container {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+footer .logo {
+  font-size: 6vw;
+  width: fit-content;
+  margin-bottom: 50px;
+  /* border: 1px solid rgb(0, 255, 42); */
+}
+.social-links {
+  width: 50%;
+  margin-top: 20px;
+  /* border: 1px solid green; */
+}
+.social-links p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.social-links ul {
+  margin-top: 10px;
+  color: #d3d3d3;
+  width: 58%;
+  display: flex;
+  /* border: 1px solid green; */
+}
+.social-links ul a {
+  display: block;
+  color: #b6014d;
+  border: 1px solid #b6014d;
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
+  transition: all 0.5s linear;
+}
+.social-links ul a:hover {
+  background-color: #b6014d;
+  color: #fff;
+}
+.footer-nav {
+  width: fit-content;
+  line-height: 1.5;
+  /* border: 1px solid rgb(0, 255, 42); */
+}
+.footer-nav p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer-nav a {
+  text-align: center;
+  color: #b6014d;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.footer-contact {
+  line-height: 1.8;
+  /* border: 1px solid red; */
+}
+.footer-contact p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer-contact a {
+  color: #b6014d;
+}
+.copyrights {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+}

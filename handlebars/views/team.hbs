@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+  <div>{{>header}}</div>
+  {{!-- <h2>{{title}} Page</h2> --}}
+  <p class="home-info">{{info}}</p>
+  <h1>{{desc}}</h1>
+  <div class="team-parent">
+    <div class="team-child"> <img src={{team1.img}} alt={{team1.name}} />
+      <div class="team-info">
+        <ul>
+          <li>{{team1.name}}</li>
+          <li>{{team1.dept}}</li>
+          <li>{{team1.age}} years</li>
+          <li>{{team1.city}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-child"> <img src={{team2.img}} alt={{team2.name}} />
+      <div class="team-info">
+        <ul>
+          <li>{{team2.name}}</li>
+          <li>{{team2.dept}}</li>
+          <li>{{team2.age}} years</li>
+          <li>{{team2.city}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-child"> <img src={{team3.img}} alt={{team3.name}} />
+      <div class="team-info">
+        <ul>
+          <li>{{team3.name}}</li>
+          <li>{{team3.dept}}</li>
+          <li>{{team3.age}} years</li>
+          <li>{{team3.city}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-child"> <img src={{team4.img}} alt={{team4.name}} />
+      <div class="team-info">
+        <ul>
+          <li>{{team4.name}}</li>
+          <li>{{team4.dept}}</li>
+          <li>{{team4.age}} years</li>
+          <li>{{team4.city}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>{{>footer}}</footer>
+</body>
+
+</html>

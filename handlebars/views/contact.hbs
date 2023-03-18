@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+  <div>{{>header}}</div>
+  {{!-- <h2>{{title}} Page</h2> --}}
+  <p class="home-info">{{info}}</p>
+  <div class="contact">
+    <table>
+      <tr>
+        <td>mobile</td>
+        <td>{{mobile}} </td>
+      </tr>
+      <tr>
+        <td>phone</td>
+        <td>{{phone}} </td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>{{email}} </td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td>{{address}} </td>
+      </tr>
+    </table>
+  </div>
+  <footer>{{>footer}}</footer>
+</body>
+
+</html>

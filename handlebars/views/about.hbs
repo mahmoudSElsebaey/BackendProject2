@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div>{{>header}}</div>
+
+  <p class="home-info">{{info}}</p>
+
+  <div class="about">
+    <div class="">
+      <img src={{aboutImages.img1}} alt="about image">
+      <p class="aboutDesc1">{{desc.d1}}</p>
+    </div>
+    <div class="">
+      <p class="aboutDesc2">{{desc.d2}}</p>
+      <img src={{aboutImages.img2}} alt="about image">
+    </div>
+  </div>
+
+  <footer>{{>footer}}</footer>
+</body>
+
+</html>
